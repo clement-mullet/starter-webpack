@@ -34,7 +34,26 @@ body {
   z-index: 2;
   opacity: 1;
 }
+/* COUNTER API SEARCH */
+.hdpi.pac-logo:after,
+.pac-logo:after,
+.mapboxgl-ctrl-attrib-inner,
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-bottom-right {
+  display: none !important;
+}
 
+.mapboxgl-marker {
+  position: relative !important;
+}
+.mapboxgl-canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+/* COUNTER API SEARCH */
 /* NOTIFICATION */
 
 .s_notification {

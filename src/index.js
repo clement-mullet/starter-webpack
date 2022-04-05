@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import Swiper from 'swiper';
 import "./styles/style.scss";
+import $ from "jquery";
 
 class generalCall {
     callAxeptio() {
@@ -27,3 +28,11 @@ class generalCall {
   
 const general = new generalCall;
 general.callAxeptio();
+
+// CALL SPECIFIC SCRIPT
+switch (location.pathname.split('/')[2]) {
+    case "":
+        estimation.callStartEstimation();
+        general.callModuleFaq();
+        break;
+}

@@ -1,4 +1,4 @@
-<?php include 'src/php/load_element.php';?>
+<?php include 'src/php/component.php';?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
