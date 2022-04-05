@@ -1,0 +1,154 @@
+@use "variables";
+@use "reset";
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+#wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 1;
+}
+
+/* NOTIFICATION */
+
+.s_notification {
+  display: block;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top: 20%;
+  right: 0;
+  z-index: 10;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  i {
+    margin-right: 15px;
+    font-weight: bold;
+  }
+
+  .error_message {
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    background: variables.$S_NOTIFICATION_COLOR_ERROR;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sucess_message {
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    background: variables.$S_NOTIFICATION_COLOR_SUCCESS;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* NOTIFICATION */
+/* OVERLAY */
+
+.s_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: variables.$S_MAIN_COLOR_BLACK;
+  z-index: 7;
+}
+
+.opa_x_6 {
+  opacity: 0.6;
+}
+
+.opa_x_5,
+.opa_x_4 {
+  opacity: 0.4;
+}
+
+.opa_x_3 {
+  opacity: 0.3;
+}
+
+.opa_x_2 {
+  opacity: 0.2;
+}
+
+/* OVERLAY */
+/* AXEPTIO */
+
+.htKxuG svg path {
+  fill: variables.$S_MAIN_COLOR_CLIENT !important;
+
+  &:last-child {
+    fill: white !important;
+  }
+}
+
+.ButtonGroup__ButtonGroupStyle-sc-1usw1pe-1
+  .inpjsL.inpjsL.inpjsL.inpjsL.inpjsL.inpjsL {
+  color: variables.$S_MAIN_COLOR_CLIENT !important;
+}
+
+.gegvBA {
+  display: none !important;
+}
+
+/* AXEPTIO */
+/* SWIPER */
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: variables.$S_MAIN_COLOR_BLACK;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$S_MAIN_COLOR_BLACK !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 23px !important;
+}
+
+/* SWIPER */
+
+/* MEDIA SCREEN MOBILE */
+@media screen and (min-width: 100px) and (max-width: 800px) {
+}
