@@ -1,6 +1,7 @@
 
 RewriteEngine on
-RewriteRule ^accueil$ index.php
+DirectoryIndex pages/index.php
+RewriteRule ^accueil$ pages/index.php
 
 <IfModule mod_expires.c>
   ExpiresActive On

@@ -3,6 +3,7 @@ import Swiper from 'swiper';
 import "./styles/style.scss";
 import $ from "jquery";
 
+
 class generalCall {
     callAxeptio() {
         window.axeptioSettings = {
@@ -32,7 +33,5 @@ general.callAxeptio();
 // CALL SPECIFIC SCRIPT
 switch (location.pathname.split('/')[2]) {
     case "":
-        estimation.callStartEstimation();
-        general.callModuleFaq();
         break;
 }

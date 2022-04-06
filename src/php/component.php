@@ -13,13 +13,13 @@ class Show {
     public function meta() {
         return "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\"> 
             <meta name=\"robots\" content=\"index, follow\"/> 
-            <link rel=\"icon\" href=\"/assets/favicon.ico\" />
-            <link type=\"text/css\" rel=\"stylesheet\" href=\"/src/styles/style.css\"> 
+            <link rel=\"icon\" href=\"/starter-webpack/assets/favicon.ico\" />
+            <link type=\"text/css\" rel=\"stylesheet\" href=\"/starter-webpack/src/styles/style.css\"> 
             <meta name=\"MobileOptimized\" content=\"width\" />
             <meta name=\"HandheldFriendly\" content=\"true\" />";
     }
     public function scripts() {
-        return "<script type=\"module\" class=\"s_script\" type=\"text/javascript\" src=\"/src/js/main.js\"></script>";
+        return "<script type=\"module\" class=\"s_script\" type=\"text/javascript\" src=\"/starter-webpack/src/js/main.js\"></script>";
 
     }
 }
