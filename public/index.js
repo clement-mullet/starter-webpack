@@ -33,5 +33,6 @@ general.callAxeptio();
 // CALL SPECIFIC SCRIPT
 switch (location.pathname.split('/')[2]) {
     case "":
+        console.log('test');
         break;
 }

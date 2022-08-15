@@ -1,4 +1,4 @@
-<?php include '../src/php/component.php';?>
+<?php include 'src/Templates/component.php';?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -21,7 +21,10 @@
     </head>
     <body>
         <div id="main">
+
             <div id="wrapper">
+                
+            
             </div>
         </div>
         <?= $show->scripts(); ?>

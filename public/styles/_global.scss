@@ -1,5 +1,14 @@
 @use "variables";
 @use "reset";
+@use "media_query";
+
+$breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'laptop': 1440px
+);
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -168,6 +177,3 @@ body {
 
 /* SWIPER */
 
-/* MEDIA SCREEN MOBILE */
-@media screen and (min-width: 100px) and (max-width: 800px) {
-}
