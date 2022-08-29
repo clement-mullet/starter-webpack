@@ -1,6 +1,7 @@
 @use "variables";
 @use "reset";
 @use "media_query";
+@use "board";
 
 $breakpoints: (
   'phone': 480px,
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: #FFFF;
 }
 
 #wrapper {

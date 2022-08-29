@@ -56,9 +56,12 @@ module.exports = {
     }
   )],
   devtool: "source-map",
-  entry: './public/index.js',
+  entry: {
+    main : './public/js/index.js',
+    auth : './public/js/example.js',
+  },
   output: {
-    filename: 'js/main.js',
+    filename: 'js/dist/[name].js',
     path: path.resolve(__dirname, './public'),
   },
 };

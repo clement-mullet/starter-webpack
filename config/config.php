@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /*******
  * 
  * Modify those two globals according to your project root
@@ -6,11 +7,17 @@
  * 
  * 
  */
-define('ROOT', '/starter-webpack');
-define('PROJECT_ROOT', '/starter-webpack');
-
+define('ROOT', '');
+define('PROJECT_ROOT', '');
 // Here to send mails
-define('DOMAIN_NAME', 'http://localhost');
+define('DOMAIN_NAME', 'http://localhost/');
+define('COMMON_USER_ROLE', 'COMMON');
+define('ADMIN_USER_ROLE', 'ADMIN');
 
 
-?>
+
+// db config variables
+$_ENV['DB_DEV'] = "";
+$_ENV['DB_HOST'] = "localhost";
+$_ENV['DB_USER'] = "root";
+$_ENV['DB_PASSWORD'] = "";
